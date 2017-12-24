@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB6F70B81FEFC44F0073E54D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70B71FEFC44F0073E54D /* AppDelegate.swift */; };
+		DB6F70BA1FEFC44F0073E54D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70B91FEFC44F0073E54D /* ViewController.swift */; };
+		DB6F70BD1FEFC44F0073E54D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70BB1FEFC44F0073E54D /* Main.storyboard */; };
+		DB6F70C01FEFC44F0073E54D /* Password_Keeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70BE1FEFC44F0073E54D /* Password_Keeper.xcdatamodeld */; };
+		DB6F70C21FEFC44F0073E54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70C11FEFC44F0073E54D /* Assets.xcassets */; };
+		DB6F70C51FEFC44F0073E54D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70C31FEFC44F0073E54D /* LaunchScreen.storyboard */; };
+		DB6F70D01FEFC44F0073E54D /* Password_KeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB6F70CC1FEFC44F0073E54D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6F70AC1FEFC44F0073E54D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6F70B31FEFC44F0073E54D;
+			remoteInfo = "Password Keeper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB6F70B41FEFC44F0073E54D /* Password Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6F70B71FEFC44F0073E54D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB6F70B91FEFC44F0073E54D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB6F70BC1FEFC44F0073E54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB6F70BF1FEFC44F0073E54D /* Password_Keeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Password_Keeper.xcdatamodel; sourceTree = "<group>"; };
+		DB6F70C11FEFC44F0073E54D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB6F70C41FEFC44F0073E54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB6F70C61FEFC44F0073E54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6F70CB1FEFC44F0073E54D /* Password KeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password KeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password_KeeperTests.swift; sourceTree = "<group>"; };
+		DB6F70D11FEFC44F0073E54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6F70B11FEFC44F0073E54D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6F70C81FEFC44F0073E54D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB6F70AB1FEFC44F0073E54D = {
+			isa = PBXGroup;
+			children = (
+				DB6F70B61FEFC44F0073E54D /* Password Keeper */,
+				DB6F70CE1FEFC44F0073E54D /* Password KeeperTests */,
+				DB6F70B51FEFC44F0073E54D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6F70B51FEFC44F0073E54D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F70B41FEFC44F0073E54D /* Password Keeper.app */,
+				DB6F70CB1FEFC44F0073E54D /* Password KeeperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6F70B61FEFC44F0073E54D /* Password Keeper */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F70B71FEFC44F0073E54D /* AppDelegate.swift */,
+				DB6F70B91FEFC44F0073E54D /* ViewController.swift */,
+				DB6F70BB1FEFC44F0073E54D /* Main.storyboard */,
+				DB6F70C11FEFC44F0073E54D /* Assets.xcassets */,
+				DB6F70C31FEFC44F0073E54D /* LaunchScreen.storyboard */,
+				DB6F70C61FEFC44F0073E54D /* Info.plist */,
+				DB6F70BE1FEFC44F0073E54D /* Password_Keeper.xcdatamodeld */,
+			);
+			path = "Password Keeper";
+			sourceTree = "<group>";
+		};
+		DB6F70CE1FEFC44F0073E54D /* Password KeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */,
+				DB6F70D11FEFC44F0073E54D /* Info.plist */,
+			);
+			path = "Password KeeperTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB6F70B31FEFC44F0073E54D /* Password Keeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6F70D41FEFC4500073E54D /* Build configuration list for PBXNativeTarget "Password Keeper" */;
+			buildPhases = (
+				DB6F70B01FEFC44F0073E54D /* Sources */,
+				DB6F70B11FEFC44F0073E54D /* Frameworks */,
+				DB6F70B21FEFC44F0073E54D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Password Keeper";
+			productName = "Password Keeper";
+			productReference = DB6F70B41FEFC44F0073E54D /* Password Keeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB6F70CA1FEFC44F0073E54D /* Password KeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6F70D71FEFC4500073E54D /* Build configuration list for PBXNativeTarget "Password KeeperTests" */;
+			buildPhases = (
+				DB6F70C71FEFC44F0073E54D /* Sources */,
+				DB6F70C81FEFC44F0073E54D /* Frameworks */,
+				DB6F70C91FEFC44F0073E54D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6F70CD1FEFC44F0073E54D /* PBXTargetDependency */,
+			);
+			name = "Password KeeperTests";
+			productName = "Password KeeperTests";
+			productReference = DB6F70CB1FEFC44F0073E54D /* Password KeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB6F70AC1FEFC44F0073E54D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Andrey Sak";
+				TargetAttributes = {
+					DB6F70B31FEFC44F0073E54D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DB6F70CA1FEFC44F0073E54D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB6F70B31FEFC44F0073E54D;
+					};
+				};
+			};
+			buildConfigurationList = DB6F70AF1FEFC44F0073E54D /* Build configuration list for PBXProject "Password Keeper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB6F70AB1FEFC44F0073E54D;
+			productRefGroup = DB6F70B51FEFC44F0073E54D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6F70B31FEFC44F0073E54D /* Password Keeper */,
+				DB6F70CA1FEFC44F0073E54D /* Password KeeperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6F70B21FEFC44F0073E54D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6F70C51FEFC44F0073E54D /* LaunchScreen.storyboard in Resources */,
+				DB6F70C21FEFC44F0073E54D /* Assets.xcassets in Resources */,
+				DB6F70BD1FEFC44F0073E54D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6F70C91FEFC44F0073E54D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB6F70B01FEFC44F0073E54D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6F70BA1FEFC44F0073E54D /* ViewController.swift in Sources */,
+				DB6F70B81FEFC44F0073E54D /* AppDelegate.swift in Sources */,
+				DB6F70C01FEFC44F0073E54D /* Password_Keeper.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6F70C71FEFC44F0073E54D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6F70D01FEFC44F0073E54D /* Password_KeeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB6F70CD1FEFC44F0073E54D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6F70B31FEFC44F0073E54D /* Password Keeper */;
+			targetProxy = DB6F70CC1FEFC44F0073E54D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB6F70BB1FEFC44F0073E54D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6F70BC1FEFC44F0073E54D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB6F70C31FEFC44F0073E54D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6F70C41FEFC44F0073E54D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6F70D21FEFC4500073E54D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB6F70D31FEFC4500073E54D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6F70D51FEFC4500073E54D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKJ3EVS82G;
+				INFOPLIST_FILE = "Password Keeper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "easysoft.Password-Keeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB6F70D61FEFC4500073E54D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKJ3EVS82G;
+				INFOPLIST_FILE = "Password Keeper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "easysoft.Password-Keeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB6F70D81FEFC4500073E54D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKJ3EVS82G;
+				INFOPLIST_FILE = "Password KeeperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "easysoft.Password-KeeperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Password Keeper.app/Password Keeper";
+			};
+			name = Debug;
+		};
+		DB6F70D91FEFC4500073E54D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKJ3EVS82G;
+				INFOPLIST_FILE = "Password KeeperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "easysoft.Password-KeeperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Password Keeper.app/Password Keeper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB6F70AF1FEFC44F0073E54D /* Build configuration list for PBXProject "Password Keeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6F70D21FEFC4500073E54D /* Debug */,
+				DB6F70D31FEFC4500073E54D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6F70D41FEFC4500073E54D /* Build configuration list for PBXNativeTarget "Password Keeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6F70D51FEFC4500073E54D /* Debug */,
+				DB6F70D61FEFC4500073E54D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6F70D71FEFC4500073E54D /* Build configuration list for PBXNativeTarget "Password KeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6F70D81FEFC4500073E54D /* Debug */,
+				DB6F70D91FEFC4500073E54D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB6F70BE1FEFC44F0073E54D /* Password_Keeper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB6F70BF1FEFC44F0073E54D /* Password_Keeper.xcdatamodel */,
+			);
+			currentVersion = DB6F70BF1FEFC44F0073E54D /* Password_Keeper.xcdatamodel */;
+			path = Password_Keeper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DB6F70AC1FEFC44F0073E54D /* Project object */;
+}
