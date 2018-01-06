@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB6F70B81FEFC44F0073E54D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70B71FEFC44F0073E54D /* AppDelegate.swift */; };
-		DB6F70BA1FEFC44F0073E54D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70B91FEFC44F0073E54D /* ViewController.swift */; };
-		DB6F70BD1FEFC44F0073E54D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70BB1FEFC44F0073E54D /* Main.storyboard */; };
-		DB6F70C01FEFC44F0073E54D /* Password_Keeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70BE1FEFC44F0073E54D /* Password_Keeper.xcdatamodeld */; };
-		DB6F70C21FEFC44F0073E54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70C11FEFC44F0073E54D /* Assets.xcassets */; };
-		DB6F70C51FEFC44F0073E54D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70C31FEFC44F0073E54D /* LaunchScreen.storyboard */; };
 		DB6F70D01FEFC44F0073E54D /* Password_KeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */; };
+		DB6F70E91FEFC4A00073E54D /* Password_Keeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70DC1FEFC4A00073E54D /* Password_Keeper.xcdatamodeld */; };
+		DB6F70EA1FEFC4A00073E54D /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70DF1FEFC4A00073E54D /* AuthenticationViewController.swift */; };
+		DB6F70EB1FEFC4A00073E54D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70E01FEFC4A00073E54D /* AppDelegate.swift */; };
+		DB6F70EC1FEFC4A00073E54D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70E21FEFC4A00073E54D /* LaunchScreen.storyboard */; };
+		DB6F70ED1FEFC4A00073E54D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70E41FEFC4A00073E54D /* Main.storyboard */; };
+		DB6F70EE1FEFC4A00073E54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70E71FEFC4A00073E54D /* Assets.xcassets */; };
+		DB6F70EF1FEFC4A00073E54D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB6F70E81FEFC4A00073E54D /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,16 +29,16 @@
 
 /* Begin PBXFileReference section */
 		DB6F70B41FEFC44F0073E54D /* Password Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB6F70B71FEFC44F0073E54D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB6F70B91FEFC44F0073E54D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB6F70BC1FEFC44F0073E54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DB6F70BF1FEFC44F0073E54D /* Password_Keeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Password_Keeper.xcdatamodel; sourceTree = "<group>"; };
-		DB6F70C11FEFC44F0073E54D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB6F70C41FEFC44F0073E54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DB6F70C61FEFC44F0073E54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB6F70CB1FEFC44F0073E54D /* Password KeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password KeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password_KeeperTests.swift; sourceTree = "<group>"; };
 		DB6F70D11FEFC44F0073E54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6F70DD1FEFC4A00073E54D /* Password_Keeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Password_Keeper.xcdatamodel; sourceTree = "<group>"; };
+		DB6F70DF1FEFC4A00073E54D /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		DB6F70E01FEFC4A00073E54D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB6F70E31FEFC4A00073E54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB6F70E51FEFC4A00073E54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB6F70E71FEFC4A00073E54D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB6F70E81FEFC4A00073E54D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +80,8 @@
 		DB6F70B61FEFC44F0073E54D /* Password Keeper */ = {
 			isa = PBXGroup;
 			children = (
-				DB6F70B71FEFC44F0073E54D /* AppDelegate.swift */,
-				DB6F70B91FEFC44F0073E54D /* ViewController.swift */,
-				DB6F70BB1FEFC44F0073E54D /* Main.storyboard */,
-				DB6F70C11FEFC44F0073E54D /* Assets.xcassets */,
-				DB6F70C31FEFC44F0073E54D /* LaunchScreen.storyboard */,
-				DB6F70C61FEFC44F0073E54D /* Info.plist */,
-				DB6F70BE1FEFC44F0073E54D /* Password_Keeper.xcdatamodeld */,
+				DB6F70E61FEFC4A00073E54D /* Resources */,
+				DB6F70DA1FEFC4A00073E54D /* Sources */,
 			);
 			path = "Password Keeper";
 			sourceTree = "<group>";
@@ -97,6 +93,51 @@
 				DB6F70D11FEFC44F0073E54D /* Info.plist */,
 			);
 			path = "Password KeeperTests";
+			sourceTree = "<group>";
+		};
+		DB6F70DA1FEFC4A00073E54D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F70DB1FEFC4A00073E54D /* Models */,
+				DB6F70DE1FEFC4A00073E54D /* ViewControllers */,
+				DB6F70E01FEFC4A00073E54D /* AppDelegate.swift */,
+				DB6F70E11FEFC4A00073E54D /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DB6F70DB1FEFC4A00073E54D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F70DC1FEFC4A00073E54D /* Password_Keeper.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB6F70DE1FEFC4A00073E54D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F70DF1FEFC4A00073E54D /* AuthenticationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB6F70E11FEFC4A00073E54D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F70E21FEFC4A00073E54D /* LaunchScreen.storyboard */,
+				DB6F70E41FEFC4A00073E54D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB6F70E61FEFC4A00073E54D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F70E71FEFC4A00073E54D /* Assets.xcassets */,
+				DB6F70E81FEFC4A00073E54D /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +223,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB6F70C51FEFC44F0073E54D /* LaunchScreen.storyboard in Resources */,
-				DB6F70C21FEFC44F0073E54D /* Assets.xcassets in Resources */,
-				DB6F70BD1FEFC44F0073E54D /* Main.storyboard in Resources */,
+				DB6F70ED1FEFC4A00073E54D /* Main.storyboard in Resources */,
+				DB6F70EC1FEFC4A00073E54D /* LaunchScreen.storyboard in Resources */,
+				DB6F70EE1FEFC4A00073E54D /* Assets.xcassets in Resources */,
+				DB6F70EF1FEFC4A00073E54D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB6F70BA1FEFC44F0073E54D /* ViewController.swift in Sources */,
-				DB6F70B81FEFC44F0073E54D /* AppDelegate.swift in Sources */,
-				DB6F70C01FEFC44F0073E54D /* Password_Keeper.xcdatamodeld in Sources */,
+				DB6F70EB1FEFC4A00073E54D /* AppDelegate.swift in Sources */,
+				DB6F70EA1FEFC4A00073E54D /* AuthenticationViewController.swift in Sources */,
+				DB6F70E91FEFC4A00073E54D /* Password_Keeper.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,20 +269,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB6F70BB1FEFC44F0073E54D /* Main.storyboard */ = {
+		DB6F70E21FEFC4A00073E54D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB6F70BC1FEFC44F0073E54D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DB6F70C31FEFC44F0073E54D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB6F70C41FEFC44F0073E54D /* Base */,
+				DB6F70E31FEFC4A00073E54D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DB6F70E41FEFC4A00073E54D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6F70E51FEFC4A00073E54D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -359,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MKJ3EVS82G;
-				INFOPLIST_FILE = "Password Keeper/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Password Keeper/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "easysoft.Password-Keeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MKJ3EVS82G;
-				INFOPLIST_FILE = "Password Keeper/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Password Keeper/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "easysoft.Password-Keeper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,12 +492,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DB6F70BE1FEFC44F0073E54D /* Password_Keeper.xcdatamodeld */ = {
+		DB6F70DC1FEFC4A00073E54D /* Password_Keeper.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DB6F70BF1FEFC44F0073E54D /* Password_Keeper.xcdatamodel */,
+				DB6F70DD1FEFC4A00073E54D /* Password_Keeper.xcdatamodel */,
 			);
-			currentVersion = DB6F70BF1FEFC44F0073E54D /* Password_Keeper.xcdatamodel */;
+			currentVersion = DB6F70DD1FEFC4A00073E54D /* Password_Keeper.xcdatamodel */;
 			path = Password_Keeper.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
