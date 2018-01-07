@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,13 +19,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="QCL-rK-g4p">
-                                <rect key="frame" x="149.5" y="313" width="75" height="40"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="QCL-rK-g4p">
+                                <rect key="frame" x="161" y="307" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QCL-rK-g4p" secondAttribute="height" multiplier="1:1" id="TpW-Ip-TRP"/>
+                                    <constraint firstAttribute="height" constant="52" id="fLx-Nk-Fd8"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.59215686274509804" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QCL-rK-g4p" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1:5" id="UAG-aP-dJQ"/>
                             <constraint firstItem="QCL-rK-g4p" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZSr-7B-K8G"/>
                             <constraint firstItem="QCL-rK-g4p" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zdb-I9-xGk"/>
                         </constraints>

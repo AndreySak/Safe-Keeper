@@ -7,53 +7,53 @@
 //
 
 import UIKit
+import EasyPeasy
 
 class AuthenticationViewController: UIViewController {
-
-    @IBOutlet weak var appIconCenterYConstraint: NSLayoutConstraint!
-    @IBOutlet weak var appIconTopOffsetConstraint: NSLayoutConstraint!
-    @IBOutlet weak var appIconWidthConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var stackView: UIStackView!
+    
+    private var masterPasswordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        masterPasswordTextField = generateMasterTextField()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animate(withDuration: 0.5) {
-//            self.appIconWidthConstraint.setMultiplier(multiplier: 1 / 3)
-//            self.appIconTopOffsetConstraint.constant = 20.0
-            self.appIconCenterYConstraint.constant = 50.0
-            self.view.layoutIfNeeded()
+        stackView.addArrangedSubview(masterPasswordTextField)
+        
+        masterPasswordTextField.isHidden = true
+        
+        UIView.animate(withDuration: 1) {
+            self.masterPasswordTextField.isHidden = false
         }
     }
-
-
-}
-
-extension NSLayoutConstraint {
-
-    func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
-        NSLayoutConstraint.deactivate([self])
+        masterPasswordTextField.easy.layout([Height(44.0), Width(view.frame.width / 2.0)])
+    }
+    
+    private func generateMasterTextField() -> UITextField {
+        let masterTextField = UITextField()
         
-        let newConstraint = NSLayoutConstraint(
-            item: firstItem,
-            attribute: firstAttribute,
-            relatedBy: relation,
-            toItem: secondItem,
-            attribute: secondAttribute,
-            multiplier: multiplier,
-            constant: constant)
+        masterTextField.placeholder = "Master password"
+        masterTextField.backgroundColor = UIColor.white
+        masterTextField.borderStyle = .roundedRect
+        masterTextField.textContentType = .password
         
-        newConstraint.priority = priority
-        newConstraint.shouldBeArchived = self.shouldBeArchived
-        newConstraint.identifier = self.identifier
-        
-        NSLayoutConstraint.activate([newConstraint])
-        return newConstraint
+        return masterTextField
     }
 }
 
