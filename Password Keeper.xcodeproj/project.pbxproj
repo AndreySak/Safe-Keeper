@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1E5D6C54B67103FEE6236519 /* Pods_Password_Keeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D68AD52A9874CEFC1A68BD3 /* Pods_Password_Keeper.framework */; };
 		95D37C5D1D150262D26F5F84 /* Pods_Password_KeeperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEB844E3F4534FB0E12C545 /* Pods_Password_KeeperTests.framework */; };
+		DB6DE90120051877001714C5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE90020051877001714C5 /* R.generated.swift */; };
+		DB6DE90220051877001714C5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE90020051877001714C5 /* R.generated.swift */; };
 		DB6F70D01FEFC44F0073E54D /* Password_KeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */; };
 		DB6F70E91FEFC4A00073E54D /* Password_Keeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70DC1FEFC4A00073E54D /* Password_Keeper.xcdatamodeld */; };
 		DB6F70EA1FEFC4A00073E54D /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70DF1FEFC4A00073E54D /* AuthenticationViewController.swift */; };
@@ -36,6 +38,7 @@
 		7C9F89280E9E03FD579A205C /* Pods-Password Keeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Password Keeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Password Keeper/Pods-Password Keeper.release.xcconfig"; sourceTree = "<group>"; };
 		AAEB844E3F4534FB0E12C545 /* Pods_Password_KeeperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Password_KeeperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61A56F8BC31F7830F88410E /* Pods-Password KeeperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Password KeeperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Password KeeperTests/Pods-Password KeeperTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB6DE90020051877001714C5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		DB6F70B41FEFC44F0073E54D /* Password Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6F70CB1FEFC44F0073E54D /* Password KeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password KeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password_KeeperTests.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		DB6F70AB1FEFC44F0073E54D = {
 			isa = PBXGroup;
 			children = (
+				DB6DE90020051877001714C5 /* R.generated.swift */,
 				DB6F70B61FEFC44F0073E54D /* Password Keeper */,
 				DB6F70CE1FEFC44F0073E54D /* Password KeeperTests */,
 				DB6F70B51FEFC44F0073E54D /* Products */,
@@ -180,6 +184,7 @@
 			buildConfigurationList = DB6F70D41FEFC4500073E54D /* Build configuration list for PBXNativeTarget "Password Keeper" */;
 			buildPhases = (
 				3CD1E8A871798661626144F6 /* [CP] Check Pods Manifest.lock */,
+				DB6DE8FF20051826001714C5 /* R.swift */,
 				DB6F70B01FEFC44F0073E54D /* Sources */,
 				DB6F70B11FEFC44F0073E54D /* Frameworks */,
 				DB6F70B21FEFC44F0073E54D /* Resources */,
@@ -352,15 +357,31 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Password Keeper/Pods-Password Keeper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Password Keeper/Pods-Password Keeper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DB6DE8FF20051826001714C5 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
 		};
 		DDDD910CFA3DDB69C185FAC4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -370,10 +391,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Password KeeperTests/Pods-Password KeeperTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -390,6 +413,7 @@
 				DB6F70EB1FEFC4A00073E54D /* AppDelegate.swift in Sources */,
 				DB6F70EA1FEFC4A00073E54D /* AuthenticationViewController.swift in Sources */,
 				DB6F70E91FEFC4A00073E54D /* Password_Keeper.xcdatamodeld in Sources */,
+				DB6DE90120051877001714C5 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6F70D01FEFC44F0073E54D /* Password_KeeperTests.swift in Sources */,
+				DB6DE90220051877001714C5 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

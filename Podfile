@@ -6,10 +6,12 @@ target 'Password Keeper' do
   use_frameworks!
 
   pod "EasyPeasy"
+  pod "R.swift"
   # Pods for Password Keeper
 
   target 'Password KeeperTests' do
 	  pod "EasyPeasy"
+	  pod "R.swift"
     inherit! :search_paths
     # Pods for testing
   end
