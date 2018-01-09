@@ -11,6 +11,10 @@
 		95D37C5D1D150262D26F5F84 /* Pods_Password_KeeperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEB844E3F4534FB0E12C545 /* Pods_Password_KeeperTests.framework */; };
 		DB6DE90120051877001714C5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE90020051877001714C5 /* R.generated.swift */; };
 		DB6DE90220051877001714C5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE90020051877001714C5 /* R.generated.swift */; };
+		DB6DE90520051A19001714C5 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB6DE90420051A18001714C5 /* Localized.strings */; };
+		DB6DE90620051A19001714C5 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB6DE90420051A18001714C5 /* Localized.strings */; };
+		DB6DE90820051C29001714C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE90720051C29001714C5 /* Colors.swift */; };
+		DB6DE90920051C29001714C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE90720051C29001714C5 /* Colors.swift */; };
 		DB6F70D01FEFC44F0073E54D /* Password_KeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */; };
 		DB6F70E91FEFC4A00073E54D /* Password_Keeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70DC1FEFC4A00073E54D /* Password_Keeper.xcdatamodeld */; };
 		DB6F70EA1FEFC4A00073E54D /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F70DF1FEFC4A00073E54D /* AuthenticationViewController.swift */; };
@@ -39,6 +43,8 @@
 		AAEB844E3F4534FB0E12C545 /* Pods_Password_KeeperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Password_KeeperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61A56F8BC31F7830F88410E /* Pods-Password KeeperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Password KeeperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Password KeeperTests/Pods-Password KeeperTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB6DE90020051877001714C5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		DB6DE90420051A18001714C5 /* Localized.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
+		DB6DE90720051C29001714C5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DB6F70B41FEFC44F0073E54D /* Password Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6F70CB1FEFC44F0073E54D /* Password KeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password KeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6F70CF1FEFC44F0073E54D /* Password_KeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password_KeeperTests.swift; sourceTree = "<group>"; };
@@ -90,6 +96,14 @@
 				C61A56F8BC31F7830F88410E /* Pods-Password KeeperTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB6DE90320051A18001714C5 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				DB6DE90420051A18001714C5 /* Localized.strings */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		DB6F70AB1FEFC44F0073E54D = {
@@ -146,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				DB6F70DC1FEFC4A00073E54D /* Password_Keeper.xcdatamodeld */,
+				DB6DE90720051C29001714C5 /* Colors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +185,7 @@
 		DB6F70E61FEFC4A00073E54D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DB6DE90320051A18001714C5 /* Strings */,
 				DB6F70E71FEFC4A00073E54D /* Assets.xcassets */,
 				DB6F70E81FEFC4A00073E54D /* Info.plist */,
 			);
@@ -268,6 +284,7 @@
 			files = (
 				DB6F70ED1FEFC4A00073E54D /* Main.storyboard in Resources */,
 				DB6F70EC1FEFC4A00073E54D /* LaunchScreen.storyboard in Resources */,
+				DB6DE90520051A19001714C5 /* Localized.strings in Resources */,
 				DB6F70EE1FEFC4A00073E54D /* Assets.xcassets in Resources */,
 				DB6F70EF1FEFC4A00073E54D /* Info.plist in Resources */,
 			);
@@ -277,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6DE90620051A19001714C5 /* Localized.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6F70EB1FEFC4A00073E54D /* AppDelegate.swift in Sources */,
+				DB6DE90820051C29001714C5 /* Colors.swift in Sources */,
 				DB6F70EA1FEFC4A00073E54D /* AuthenticationViewController.swift in Sources */,
 				DB6F70E91FEFC4A00073E54D /* Password_Keeper.xcdatamodeld in Sources */,
 				DB6DE90120051877001714C5 /* R.generated.swift in Sources */,
@@ -422,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6F70D01FEFC44F0073E54D /* Password_KeeperTests.swift in Sources */,
+				DB6DE90920051C29001714C5 /* Colors.swift in Sources */,
 				DB6DE90220051877001714C5 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

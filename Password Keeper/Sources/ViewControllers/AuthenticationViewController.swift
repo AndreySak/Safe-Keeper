@@ -13,13 +13,14 @@ class AuthenticationViewController: UIViewController {
     
     @IBOutlet weak var stackView: UIStackView!
     
-    private weak var masterPasswordTextField: UITextField?
-    private weak var loginButton: UIButton?
+    private var masterPasswordTextField: UITextField?
+    private var loginButton: UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         masterPasswordTextField = generateMasterTextField()
+        loginButton = generateLoginButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,10 +56,14 @@ class AuthenticationViewController: UIViewController {
         loginButton?.easy.layout([Height(44.0), Width(view.frame.width / 2.0)])
     }
     
+    @objc func loginAction(sender: Any?) {
+        
+    }
+    
     private func generateMasterTextField() -> UITextField {
         let masterTextField = UITextField()
         
-        masterTextField.placeholder = "Master password"
+        masterTextField.placeholder = R.string.localized.authorizationMasterPassword()
         masterTextField.backgroundColor = UIColor.white
         masterTextField.borderStyle = .roundedRect
         masterTextField.textContentType = .password
@@ -69,8 +74,12 @@ class AuthenticationViewController: UIViewController {
     private func generateLoginButton() -> UIButton {
         let loginButton = UIButton()
         
-        loginButton.setTitle("Login", for: .normal)
-        loginButton.setTitleColor(UIColor.white, for: .normal)
+        loginButton.addTarget(self,
+                              action: #selector(AuthenticationViewController.loginAction),
+                              for: .touchUpInside)
+        
+        loginButton.setTitle(R.string.localized.authorizationLogin(), for: .normal)
+        loginButton.setTitleColor(Colors.systemBlue, for: .normal)
         loginButton.backgroundColor = UIColor.white
         
         loginButton.layer.cornerRadius = 4.0
